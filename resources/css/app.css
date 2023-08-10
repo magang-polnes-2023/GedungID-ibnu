@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+/* Kode animasi bouncing */
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Kelas animasi */
+.animate-bounce {
+    animation: bounce 1s infinite;
+    display: inline-block;
+}
+
+/* Animasi dengan penundaan */
+@keyframes bounce-delay {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Kelas animasi dengan penundaan */
+.animate-bounce-delay {
+    animation: bounce-delay 1s infinite;
+    display: inline-block;
+}
+
+/* Penundaan untuk setiap huruf */
+.animate-bounce-delay:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.animate-bounce-delay:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.animate-bounce-delay:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.animate-bounce-delay:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.animate-bounce-delay:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.animate-bounce-delay:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.animate-bounce-delay:nth-child(7) {
+    animation-delay: 0.7s;
+}
+.animate-bounce-delay:nth-child(8) {
+    animation-delay: 0.8s;
+}
+.animate-bounce-delay:nth-child(8) {
+    animation-delay: 0.9s;
+}
+
+@tailwind utilities;
